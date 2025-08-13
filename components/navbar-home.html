@@ -1,30 +1,82 @@
-<!-- Standardized Navigation Bar for DeshDarshan Homepage -->
-<nav class="navbar">
-    <div class="nav-container">
-        <div class="nav-logo">
-            <h2><a href="index.html">Desh Darshan</a></h2>
-        </div>
-        <ul class="nav-menu">
-            <li><a href="pages/explore.html">Explore India</a></li>
-            <li><a href="pages/festival-calendar.html">Festival Calendar</a></li>
-            <li><a href="pages/feedback.html">Feedback</a></li>
-            <li><a href="pages/about-us.html">About Us</a></li>
-            <li><a href="pages/contact-us.html">Contact Us</a></li>
-        </ul>
-        <div class="nav-buttons">
-            <a href="pages/login.html" class="btn-login">
-                <span>Login</span>
-                <i class="fas fa-sign-in-alt"></i>
-            </a>
-            <a href="pages/signup.html" class="btn-signup">
-                <span>Signup</span>
-                <i class="fas fa-user-plus"></i>
-            </a>
-        </div>
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desh Darshan</title>
+<!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+  <a href="#" class="logo">Desh Darshan</a>
+
+  <!-- Desktop Nav -->
+  <nav class="nav-desktop">
+    <ul class="nav-links">
+      <li><a href="#">Explore India</a></li>
+      <li><a href="#">Festival Calendar</a></li>
+      <li><a href="#">Feedback</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+    <div class="auth-buttons">
+      <a href="#" class="login-btn">Login</a>
+      <a href="#" class="signup-btn">Signup</a>
     </div>
+  </nav>
+
+  <!-- Hamburger -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<nav class="nav-mobile" id="navMobile">
+  <ul>
+    <li><a href="#">Explore India</a></li>
+    <li><a href="#">Festival Calendar</a></li>
+    <li><a href="#">Feedback</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+  <div class="auth-buttons">
+    <a href="#" class="login-btn">Login</a>
+    <a href="#" class="signup-btn">Signup</a>
+  </div>
 </nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="particles">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+  <div class="hero-content">
+    <h1>Welcome to <span class="highlight">Desh Darshan</span></h1>
+    <p>Explore the beauty of India</p>
+    <a href="#" class="explore-btn">Explore Now</a>
+  </div>
+</section>
+
+<!-- JS -->
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navMobile = document.getElementById('navMobile');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMobile.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>
